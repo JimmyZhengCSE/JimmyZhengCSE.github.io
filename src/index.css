@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+    background-color: #222222;
+    color: white;
+}
+
+.typewriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+    animation: typing 2s steps(22) infinite forwards, 
+        blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    80% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
